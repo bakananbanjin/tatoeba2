@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tatoeba Website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-08 11:57+0800\n"
-"PO-Revision-Date: 2020-05-08 07:36+0000\n"
+"POT-Creation-Date: 2020-05-22 03:27+0800\n"
+"PO-Revision-Date: 2020-05-22 07:42+0000\n"
 "Last-Translator: Irriep Nala Novram <allannkorh@yahoo.fr>\n"
 "Language-Team: Breton (http://www.transifex.com/tatoeba/tatoeba_website/language/br/)\n"
 "MIME-Version: 1.0\n"
@@ -1193,8 +1193,8 @@ msgid "Temuan"
 msgstr "Temueg"
 
 #: github.com/Tatoeba/tatoeba2/tree/dev/src/Lib/LanguagesLib.php#L526
-msgid "Chinese (Jin)"
-msgstr "Sinaeg (Jin)"
+msgid "Jin Chinese"
+msgstr "Sinaeg Jin"
 
 #: github.com/Tatoeba/tatoeba2/tree/dev/src/Lib/LanguagesLib.php#L527
 msgid "Maithili"
@@ -1467,3 +1467,15 @@ msgstr "Tongaeg (Zambezi)"
 #: github.com/Tatoeba/tatoeba2/tree/dev/src/Lib/LanguagesLib.php#L594
 msgid "Newari"
 msgstr "Newarieg"
+
+#: github.com/Tatoeba/tatoeba2/tree/dev/src/Lib/LanguagesLib.php#L595
+msgid "Jewish Palestinian Aramaic"
+msgstr "Aramaeg Palestinian Yuzev"
+
+#: github.com/Tatoeba/tatoeba2/tree/dev/src/Lib/LanguagesLib.php#L596
+msgid "Phoenician"
+msgstr "Fenisianeg"
+
+#: github.com/Tatoeba/tatoeba2/tree/dev/src/Lib/LanguagesLib.php#L597
+msgid "Rendille"
+msgstr "Rendileg"

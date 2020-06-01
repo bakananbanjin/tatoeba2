@@ -594,6 +594,7 @@ class LanguagesLib
                 'new' => __d('languages', 'Newari'),
                 'jpa' => __d('languages', 'Jewish Palestinian Aramaic'),
                 'phn' => __d('languages', 'Phoenician'),
+                'rel' => __d('languages', 'Rendille'),
             );
         }
         return $languages;
@@ -660,6 +661,7 @@ class LanguagesLib
             "tmr",
             "syc",
             "phn",
+            "jpa",
         );
 
         $autoLangs = array(

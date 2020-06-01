@@ -57,24 +57,27 @@ if (!CurrentUser::hasAcceptedNewTermsOfUse()) {
     echo $this->Form->end();
 }
 
+if ($this->Announcement->isDisplayed()) {
+    if ($warning = $this->Announcement->shutdownWarning()) {
+        echo $this->Html->div('maintenance', $warning);
+    } else {
+        $isDisplayingAnnouncement = true;
+        $announcementId = 'maintenance-2020-06-07';
+        $announcementText = $this->Html->tag('div', format(__(
+            'Tatoeba will be unavailable this Sunday (June 7) from 2am to 5am UTC for <a href="{}">maintenance</a>.'
+        ), 'https://blog.tatoeba.org/2020/06/tatoeba-scheduled-maintenance.html'));
 
-if (Configure::read('Announcement.enabled')) {
-    $isDisplayingAnnouncement = true;
-    $announcementId = 'kodoeba';
-    $announcementText = $this->Html->tag('div', format(__(
-        'Would you like to help with the development of Tatoeba? Join our <a href="{}">coding event</a>!'
-    ), 'https://blog.tatoeba.org/2020/05/announcing-kodoeba-1.html'));
-    
-    $closeButton = $this->Html->div('close button', $this->Images->svgIcon('close'));
-    $content = $this->Html->div('content', $announcementText);
+        $closeButton = $this->Html->div('close button', $this->Images->svgIcon('close'));
+        $content = $this->Html->div('content', $announcementText);
 
-    echo $this->Html->div(
-        'announcement',
-        $closeButton . $content,
-        array(
-            'data-announcement-id' => $announcementId
-        )
-    );
+        echo $this->Html->div(
+            'announcement',
+            $closeButton . $content,
+            array(
+                'data-announcement-id' => $announcementId
+            )
+        );
+    }
 }
 
 if (Configure::read('Tatoeba.devStylesheet')) {
